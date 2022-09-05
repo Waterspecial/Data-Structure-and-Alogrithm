@@ -12,6 +12,7 @@ Example:
     Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
  */
 
+    // LINKED LIST CYCLE 1
     var hasCycle = function(head) {
         let fast = head;
         let slow = head;
@@ -26,3 +27,6 @@ Example:
         }
         return false;
     };
+
+    // LINKED LIST CYCLE 2
+    
