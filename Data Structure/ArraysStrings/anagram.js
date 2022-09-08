@@ -32,7 +32,6 @@ var isAnagram = function(s, t) {
             sMap[s[i]] = 1;
         }
     }
-    
     for(let j = 0; j < t.length; j++) {
         
         if(tMap.hasOwnProperty(t[j])) {
@@ -42,7 +41,6 @@ var isAnagram = function(s, t) {
             tMap[t[j]] = 1
         }
     }
-    
     for(let k in sMap) {
         
         if(sMap[k] !== tMap[k]){
