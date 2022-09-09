@@ -10,22 +10,20 @@ var threeSum = function (nums) {
       continue;
     }
     while (left < right) {
-        let sum = nums[i] + nums[left] +  nums[right];
+      let sum = nums[i] + nums[left] + nums[right];
 
-        if(sum === 0) {
-            let arr = [nums[i], nums[left], nums[right]];
-            res.push(arr);
-            left++;
-            while(nums[left - 1] === nums[left] && left < right) {
-                left++
-            }
+      if (sum === 0) {
+        let arr = [nums[i], nums[left], nums[right]];
+        res.push(arr);
+        left++;
+        while (nums[left - 1] === nums[left] && left < right) {
+          left++;
         }
-        else if(sum > 0) {
-            right--;
-        }
-        else{
-            left--;
-        }
+      } else if (sum > 0) {
+        right--;
+      } else {
+        left--;
+      }
     }
   }
   return res;
