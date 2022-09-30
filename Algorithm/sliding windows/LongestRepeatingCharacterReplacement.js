@@ -34,7 +34,7 @@ var characterReplacement = function(s, k) {
             freq[left] -= 1;
             windowStart += 1;
         }
-        maxLength = Math.max(maxLength, windowsEnd - windowStart + 1);
+        maxLength = Math.max(maxLength, windowEnd - windowStart + 1);
         windowEnd += 1;
     }
     return maxLength;
