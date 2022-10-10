@@ -42,7 +42,6 @@ var threeSumClosest = function(nums, target) {
                 right--;
                 }
         }
-       
 }
     return target - smallDiff; 
 };
