@@ -1,4 +1,5 @@
-  let rows = mat.length;
+var findDiagonalOrder = function(mat) {  
+let rows = mat.length;
     let cols = mat[0].length;
     const result = new Array(rows + cols -1).fill(null).map(() => []);
     
@@ -11,5 +12,5 @@
             }
         }
     }
-    
     return result.flat()
+}
